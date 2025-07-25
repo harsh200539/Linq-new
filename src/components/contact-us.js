@@ -40,15 +40,15 @@ export function ContactUs() {
             <div>
               <h3 className="h4 fw-bold text-linq-white mb-4">Follow Us</h3>
               <div className="d-flex gap-4">
-                <a href="#" aria-label="LinkedIn" className="text-linq-white">
+                <a href="https://www.linkedin.com/company/linq-corporate-solutions-pvt-ltd/" aria-label="LinkedIn" className="text-linq-white">
                   <Linkedin size={32} />
                 </a>
-                <a href="#" aria-label="Twitter" className="text-linq-white">
+                {/* <a href="#" aria-label="Twitter" className="text-linq-white">
                   <Twitter size={32} />
-                </a>
-                <a href="#" aria-label="Facebook" className="text-linq-white">
+                </a> */}
+                {/* <a href="#" aria-label="Facebook" className="text-linq-white">
                   <Facebook size={32} />
-                </a>
+                </a> */}
                  <a href="#" aria-label="Facebook" className="text-linq-white">
                   <MessageCircle size={32}/>
                 </a>
