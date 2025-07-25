@@ -1,7 +1,7 @@
 import { MapPin, Mail, Phone, Linkedin, Twitter, Facebook, MessageCircle} from "lucide-react"
 import { ContactForm } from "./contact-form.js"
 import "../../src/css/styles.css"
-import map from '../images/map.jpg'
+import map from '../images/map.png'
 export function ContactUs() {
   return (
     <section id="contact" className="pt-5 pt-md-5 pt-lg-5 bg-linq-dark text-linq-white">
