@@ -1,0 +1,430 @@
+/* General Body and Container Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* linqWhite */
+  color: #000000; /* black */
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.navbar_linq img {width: 100px;}
+/* Hero Section Styles */
+.hero-section {
+  width: 100%;
+  padding-top: 3rem; /* py-12 */
+  padding-bottom: 3rem; /* py-12 */
+  background-color: #05243c; /* primary-linqDark */
+  color: #ffffff; /* primary-linqWhite */
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  /* md:py-24 */
+  .hero-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg:py-32 */
+  .hero-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  /* lg:grid-cols-2 lg:gap-12 */
+  .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem; /* space-y-4 */
+}
+
+.hero-title-group {
+  gap: 0.5rem; /* space-y-2 */
+}
+
+.hero-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.025em; /* tracking-tighter */
+}
+
+@media (min-width: 640px) {
+  /* sm:text-5xl */
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* xl:text-6xl/none */
+  .hero-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+.hero-description {
+  max-width: 600px;
+  color: #ffffff; /* primary-linqWhite */
+}
+
+@media (min-width: 768px) {
+  /* md:text-xl */
+  .hero-description {
+    font-size: 1.25rem;
+  }
+}
+
+.hero-cards-grid {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+}
+
+@media (min-width: 768px) {
+  /* md:grid-cols-3 */
+  .hero-cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem; /* p-4 */
+  background-color: rgba(255, 255, 255, 0.1); /* primary-linqWhite/10 */
+  border-radius: 0.5rem; /* rounded-lg */
+  backdrop-filter: blur(4px); /* backdrop-blur-sm */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* border-primary-linqWhite/20 */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-card:hover {
+  transform: scale(1.05);
+}
+
+.hero-card-icon {
+  height: 2.5rem; /* h-10 */
+  width: 2.5rem; /* w-10 */
+  color: #ffffff; /* primary-linqWhite */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.hero-card-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+}
+
+.hero-card-description {
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(255, 255, 255, 0.8); /* primary-linqWhite/80 */
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* gap-2 */
+}
+
+@media (min-width: 400px) {
+  /* min-[400px]:flex-row */
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
+
+.hero-button {
+  display: inline-flex;
+  height: 2.5rem; /* h-10 */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem; /* rounded-md */
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem; /* px-8 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow */
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.hero-button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.hero-button-primary {
+  background-color: #ffffff; /* primary-linqWhite */
+  color: #05243c; /* primary-linqDark */
+}
+
+.hero-button-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* primary-linqWhite/90 */
+}
+
+.hero-button-primary:focus-visible {
+  outline-color: #ffffff; /* primary-linqWhite */
+}
+
+.hero-button-secondary {
+  border: 1px solid #ffffff; /* border-primary-linqWhite */
+  background-color: transparent;
+  color: #ffffff; /* primary-linqWhite */
+}
+
+.hero-button-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* primary-linqWhite/10 */
+  color: #ffffff; /* primary-linqWhite */
+}
+
+.hero-button-secondary:focus-visible {
+  outline-color: #ffffff; /* primary-linqWhite */
+}
+
+.hero-image-container {
+  position: relative;
+  height: 300px; /* h-[300px] */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  /* lg:h-[500px] */
+  .hero-image-container {
+    height: 500px;
+  }
+}
+
+.hero-image {
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 16 / 9; /* aspect-video */
+  overflow: hidden;
+  border-radius: 0.75rem; /* rounded-xl */
+  object-fit: cover;
+  width: 100%; /* sm:w-full */
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  /* lg:order-last lg:aspect-square */
+  .hero-image {
+    order: 1; /* This is for lg:order-last, but in a 2-column grid, it means the image is on the right */
+    aspect-ratio: 1 / 1;
+  }
+}
+:root {
+  --linq-dark: #05243c;
+  --linq-white: #ffffff;
+  --linq-black: #000000;
+}
+
+.bg-linq-dark {
+  background-color: var(--linq-dark) !important;
+}
+
+.text-linq-dark {
+  color: var(--linq-dark) !important;
+}
+
+.bg-linq-white {
+  background-color: var(--linq-white) !important;
+}
+
+.text-linq-white {
+  color: var(--linq-white) !important;
+}
+
+.bg-linq-black {
+  background-color: var(--linq-black) !important;
+}
+
+.text-linq-black {
+  color: var(--linq-black) !important;
+}
+
+.btn-linq-primary {
+  background-color: var(--linq-dark);
+  color: var(--linq-white);
+  border-color: var(--linq-dark);
+}
+
+.btn-linq-primary:hover {
+  background-color: darken(var(--linq-dark), 10%); /* Placeholder for darker shade */
+  border-color: darken(var(--linq-dark), 10%);
+}
+
+.btn-outline-linq-dark {
+  color: var(--linq-dark);
+  border-color: var(--linq-dark);
+}
+
+.btn-outline-linq-dark:hover {
+  background-color: var(--linq-dark);
+  color: var(--linq-white);
+}
+
+/* Custom card styles for sections */
+.linq-card {
+  background-color: var(--linq-white);
+  color: var(--linq-black);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.linq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styles for hero section cards */
+.hero-linq-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--linq-white);
+  backdrop-filter: blur(4px);
+}
+
+.hero-linq-card:hover {
+  transform: scale(1.05);
+  box-shadow: none; /* Remove shadow on hover for this specific card */
+}
+
+/* Image hover effect */
+.img-hover-zoom {
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* New styles for Life at LINQ features - Alternating layout */
+.linq-feature-block {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; /* Space between blocks */
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.08); /* Subtle background for each block */
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.linq-feature-block:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Lighten on hover */
+}
+
+.linq-feature-block:last-child {
+  margin-bottom: 0;
+}
+
+.linq-feature-block .feature-icon-wrapper {
+  flex-shrink: 0;
+  width: 70px; /* Fixed size for icon */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Circular background for icon */
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly more prominent icon background */
+  margin-right: 1.5rem; /* Space between icon and text */
+  transition: transform 0.3s ease-in-out;
+}
+
+.linq-feature-block:hover .feature-icon-wrapper {
+  transform: scale(1.1); /* Icon pop effect on hover */
+}
+
+.linq-feature-block .feature-icon {
+  color: var(--linq-white);
+}
+
+.linq-feature-block .feature-content {
+  flex-grow: 1;
+}
+
+.linq-feature-block .feature-title {
+  font-size: 1.35rem; /* h5 equivalent */
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.linq-feature-block .feature-description {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Alternating layout for larger screens */
+@media (min-width: 992px) {
+  /* lg breakpoint */
+  .linq-feature-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .linq-feature-row:nth-child(even) .linq-feature-block {
+    margin-left: auto; /* Push even blocks to the right */
+  }
+
+  .linq-feature-row:nth-child(odd) .linq-feature-block {
+    margin-right: auto; /* Push odd blocks to the left */
+  }
+
+  .linq-feature-row .col-lg-6 {
+    display: flex;
+    justify-content: center; /* Center content within its column */
+  }
+}
+
+
+.Aboutus img {width: 100%;
+               height: auto;}
+
+
+.lifeatlinq {width: 400px;
+                 height: 100%;}               

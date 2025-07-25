@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { AboutUs } from "./components/about-us";
+import { CareersSection } from "./components/careers-section";
+import { ContactUs } from "./components/contact-us";
+import { Footer } from "./components/footer";
+import { HeroSection } from "./components/hero-section";
+import { IndustriesWeServe } from "./components/industries-we-serve";
+import { LifeAtLinq } from "./components/life-at-linq";
+import { Navbar } from "./components/navbar";
+import { WhatWeDo } from "./components/what-we-do";
 
-function App() {
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex flex-column min-vh-100 bg-linq-white text-linq-black">
+      <Navbar />
+      <main className="flex-grow-1">
+        <HeroSection />
+        <AboutUs />
+        <WhatWeDo />
+        <IndustriesWeServe />
+        <LifeAtLinq />
+        <CareersSection />
+        <ContactUs />
+      </main>
+      <Footer />
     </div>
-  );
+  )
 }
-
-export default App;
