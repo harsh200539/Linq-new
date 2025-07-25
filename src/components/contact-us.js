@@ -20,7 +20,7 @@ export function ContactUs() {
               <div className="d-flex align-items-start mb-3">
                 <MapPin className="text-linq-white me-3 mt-1" size={24} />
                 <p className="text-linq-white-75">
-                  Nilamber Corporate Park, Building B, 2nd Floor, Nilamber Circle, Vadodara, Gujarat 390007
+                  Nilamber Corporate Park, Building C, 2nd Floor, Nilamber Circle, Vadodara, Gujarat 390007
                 </p>
               </div>
               <div className="d-flex align-items-center mb-3">

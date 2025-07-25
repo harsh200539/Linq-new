@@ -60,12 +60,12 @@ export function IndustriesWeServe() {
               <h3 className="h5 fw-bold">Healthcare</h3>
             </div>
           </div>
-          {/* <div className="col">
+          <div className="col">
             <div className="card h-100 p-4 linq-card text-center">
               <Plane className="text-linq-dark mb-3 mx-auto" size={32} />
               <h3 className="h5 fw-bold">Aviation</h3>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="text-center">
           <a href="#industries" className="btn btn-lg btn-dark ">

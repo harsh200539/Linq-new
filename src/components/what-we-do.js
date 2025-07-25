@@ -1,4 +1,4 @@
-import { BarChart, Lightbulb, Database, Code, TrendingUp } from "lucide-react"
+import { BarChart, Lightbulb, Database, Code, TrendingUp, HandHeart } from "lucide-react"
 import "../../src/css/styles.css"
 export function WhatWeDo() {
   return (
@@ -51,9 +51,10 @@ export function WhatWeDo() {
           </div>
            <div className="col">
             <div className="card h-100 p-4 linq-card">
-              <TrendingUp className="text-linq-dark mb-3" size={32} />
-              <h3 className="h5 fw-bold mb-2">Industry Reporting & Intelligence</h3>
-              <p className="card-text text-muted">Tailored reports and intelligence for various sectors.</p>
+              <HandHeart className="text-linq-dark mb-3" size={32}/>
+              {/* <TrendingUp className="text-linq-dark mb-3" size={32} /> */}
+              <h3 className="h5 fw-bold mb-2">Marketing & Operational Support</h3>
+              <p className="card-text text-muted">Enhancing brand visibility while streamlining processes for efficient business operations.</p>
             </div>
           </div>
         </div>
