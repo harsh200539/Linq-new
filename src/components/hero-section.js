@@ -10,7 +10,7 @@ export function HeroSection() {
           <div className="col-lg-6">
             <div className="d-flex flex-column justify-content-center space-y-4">
               <div className="mb-4">
-                <h1 className="display-4 fw-bold mb-2">Welcome to LINQ Corporate Solutions Pvt. Ltd.</h1>
+                <h1 className="display-4 fw-bold mb-2">Welcome to LINQ CORPORATE SOLUTIONS PRIVATE LIMITED.</h1>
                 <p className="lead text-linq-white-50">
                   We specialize in delivering data-driven insights, strategic advisory, and global research services.
                 </p>
