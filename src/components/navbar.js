@@ -1,17 +1,20 @@
 import { Mountain, Menu } from "lucide-react"
 import "../../src/css/styles.css"
 import logo from '../images/logo-light.png'
+import { useNavigate } from "react-router-dom"
+
 export function Navbar() {
+ const navigate= useNavigate ()
   return (
   
-  <header className="navbar navbar-expand-lg navbar-dark navbar_linq bg-linq-dark py-3">
+  <header className="navbar navbar-expand-lg navbar-dark navbar_linq  py-3 fixed-top ">
      
       <div className="container">
         {/* <a href="#" className="navbar-brand d-flex align-items-center">
           <Mountain className="me-2" size={24} />
           <span className="text-linq-white">LINQ Corporate Solutions</span>
         </a> */}
-        <img src={logo} />
+        <img src={logo}  onClick={() => navigate("/home")}/>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,7 +29,7 @@ export function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item mx-2">
-              <a href="#home" className="nav-link text-linq-white">
+              <a href="#home" className="nav-link text-linq-white"  onClick={() => navigate("/")}>
                 Home
               </a>
             </li>

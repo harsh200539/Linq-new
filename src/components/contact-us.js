@@ -7,7 +7,7 @@ export function ContactUs() {
     <section id="contact" className="pt-5 pt-md-5 pt-lg-5 bg-linq-dark text-linq-white">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold mb-3">Contact Us</h2>
+          <h2 className="display-6 fw-bold mb-3">Contact Us</h2>
           <p className="lead text-linq-white-50 mx-auto" style={{ maxWidth: "700px" }}>
             We're always open to partnerships, talent, and conversations. Reach out to us!
           </p>

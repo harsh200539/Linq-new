@@ -8,14 +8,19 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-
+.navbar_linq {
+              backdrop-filter: blur(4px);
+               background: linear-gradient(180deg,rgba(5, 36, 60, 1) 0%, rgba(255, 255, 255, 0) 100%) !important;
+               /* background-color: #062a46b4; */
+                position: sticky;
+                top: 0;}
 .navbar_linq img {width: 100px;}
 /* Hero Section Styles */
 .hero-section {
@@ -26,7 +31,20 @@ body {
   color: #ffffff; /* primary-linqWhite */
   position: relative;
   overflow: hidden;
+  
 }
+
+.linq_hero { background-image: url('../images/Hero-img/bgimg2.png');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center;
+             height: 100vh;
+             position: relative;
+             margin-top: -100px;
+             }
+
+
+.heroContant { margin-top: 130px;}
 
 @media (min-width: 768px) {
   /* md:py-24 */
@@ -286,11 +304,12 @@ body {
 .btn-linq-primary {
   background-color: var(--linq-dark);
   color: var(--linq-white);
-  border-color: var(--linq-dark);
+  border-color: var(--linq-white);
 }
 
 .btn-linq-primary:hover {
-  background-color: darken(var(--linq-dark), 10%); /* Placeholder for darker shade */
+  background-color: var(--linq-white); /* Placeholder for darker shade */
+  color: var(--linq-black);
   border-color: darken(var(--linq-dark), 10%);
 }
 
@@ -325,6 +344,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--linq-white);
   backdrop-filter: blur(4px);
+  transition: 0.5s;
 }
 
 .hero-linq-card:hover {

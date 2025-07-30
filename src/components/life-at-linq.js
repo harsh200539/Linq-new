@@ -7,16 +7,16 @@ import life4 from "../../src/images/life4.jpg";
 export function LifeAtLinq() {
   const features = [
     {
-      icon: Users,
-      title: "Team-Driven Environment",
+      icon: Building,
+      title: "Modern Infrastructure",
       description:
-        "A close-knit, collaborative work environment where everyone contributes.",
+        "Work in a state-of-the-art office with all the necessary amenities.",
     },
     {
-      icon: Trophy,
-      title: "Engaging Events",
+      icon: Building,
+      title: "Modern Infrastructure",
       description:
-        "Cricket matches, celebrations & team-building events for a vibrant culture.",
+        "Work in a state-of-the-art office with all the necessary amenities.",
     },
     {
       icon: Building,
@@ -30,17 +30,29 @@ export function LifeAtLinq() {
       description:
         "Your hard work is valued and recognized with a rewards system.",
     },
+     {
+      icon: Award,
+      title: "Recognition & Rewards",
+      description:
+        "Your hard work is valued and recognized with a rewards system.",
+    },
+     {
+      icon: Award,
+      title: "Recognition & Rewards",
+      description:
+        "Your hard work is valued and recognized with a rewards system.",
+    },
   ];
 
   return (
     <section
       id="life-at-linq"
-      className="py-5 py-md-5 py-lg-5 bg-linq-dark text-linq-white"
+      className="py-5 py-md-5 py-lg-5 bg-linq-dark text-linq-white "
     >
       <div className="container">
         <div className="row align-items-center g-4 g-lg-5">
             <div className="mb-4">
-                <h2 className="display-5 fw-bold mb-3">Life at LINQ</h2>
+                <h2 className="display-6 fw-bold mb-3">Life at LINQ</h2>
                 <p className="lead text-linq-white-50 mb-4">
                   We combine professionalism with fun. Our culture is
                   collaborative, inclusive, and energetic. At LINQ, you’ll find:
@@ -84,15 +96,8 @@ export function LifeAtLinq() {
                     </div>
                   </div>
                 ))}
-              </div> */}
-              <div className="d-flex flex-column flex-sm-row gap-2 mt-4">
-                <a
-                  href="#life-at-linq"
-                  className="btn btn-lg btn-light "
-                >
-                  Discover Life at LINQ ➝
-                </a>
-              </div>
+              </div>  */}
+             
             </div>
           </div>
           <div className="col-lg-6">
@@ -129,8 +134,17 @@ export function LifeAtLinq() {
                   style={{ aspectRatio: "1/1" }}
                 />
               </div>
+              
             </div>
           </div>
+           <div className="d-flex flex-column flex-sm-row gap-2 mt-4">
+                <a
+                  href="#life-at-linq"
+                  className="btn btn-lg btn-lg btn-linq-primary "
+                >
+                  Discover Life at LINQ
+                </a>
+              </div>
         </div>
       </div>
     </section>

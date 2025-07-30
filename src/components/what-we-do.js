@@ -5,7 +5,7 @@ export function WhatWeDo() {
     <section id="services" className="py-5 py-md-5 py-lg-5 bg-linq-dark text-linq-white">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold mb-3">What We Do</h2>
+          <h2 className="display-6 fw-bold mb-3">What We Do</h2>
           <p className="lead text-linq-white-50 mx-auto" style={{ maxWidth: "900px" }}>
             We specialize in delivering data-driven insights, strategic advisory, and global research services. Our core
             services include:
@@ -59,8 +59,8 @@ export function WhatWeDo() {
           </div>
         </div>
         <div className="text-center">
-          <a href="#services" className="btn btn-lg btn-light ">
-            Explore What We Do ➝
+          <a href="#services" className="btn btn-lg btn-linq-primary ">
+            Explore What We Do 
           </a>
         </div>
       </div>

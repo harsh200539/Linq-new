@@ -1,0 +1,147 @@
+        .hero-section_JoinOurTeam {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #2c5282 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .hero-section_JoinOurTeam::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-O4UbRI2LBbRjnhRbQRAulswNhyyH7s.png') center/cover;
+            opacity: 0.1;
+        }
+
+        .hero-content_JoinOurTeam {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title_JoinOurTeam {
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .what-we-do-section_JoinOurTeam {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .service-card_JoinOurTeam {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card_JoinOurTeam:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card .icon {
+            color: var(--accent-orange);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h5 {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .looking-for-section {
+            background-color: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .position-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .position-card h5 {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .btn-primary-custom {
+            background-color: var(--accent-orange);
+            border-color: var(--accent-orange);
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #e55a2b;
+            border-color: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        .benefits-section {
+            padding: 80px 0;
+        }
+
+        .benefit-item {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .benefit-item .icon {
+            color: var(--accent-orange);
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-item h5 {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .stats-section {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-orange);
+        }
+
+        .application-section {
+            background-color: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .form-control:focus {
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+        }

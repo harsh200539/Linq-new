@@ -4,13 +4,13 @@ import img_main from "../../src/images/home_img2.jpg"
 import heroimg from '../images/Hero-img/2.jpg'
 export function HeroSection() {
   return (
-    <section id="home" className="py-5 py-md-5 py-lg-5 bg-linq-dark text-linq-white position-relative overflow-hidden">
+    <section id="home" className="py-5 py-md-5 py-lg-5 bg-linq-dark text-linq-white position-relative overflow-hidden linq_hero">
       <div className="container">
-        <div className="row align-items-center g-4 g-lg-5">
-          <div className="col-lg-6">
+        <div className="row align-items-center g-4 g-lg-5 heroContant">
+          <div className="col-lg-8">
             <div className="d-flex flex-column justify-content-center space-y-4">
               <div className="mb-4">
-                <h1 className="display-4 fw-bold mb-2">Welcome to LINQ CORPORATE SOLUTIONS PRIVATE LIMITED.</h1>
+                <h1 className="display-6 fw-bold mb-2">Welcome to <br />LINQ CORPORATE SOLUTIONS <br />PRIVATE LIMITED.</h1>
                 <p className="lead text-linq-white-50">
                   We specialize in delivering data-driven insights, strategic advisory, and global research services.
                 </p>
@@ -42,17 +42,17 @@ export function HeroSection() {
                   </div>
                 </div>
               </div>
-              <div className="d-flex flex-column flex-sm-row gap-2">
+              {/* <div className="d-flex flex-column flex-sm-row gap-2">
                 <a href="#contact" className="btn btn-lg btn-light ">
                   Get in Touch
                 </a>
                 <a href="#about" className="btn btn-lg btn-outline-light">
                   Learn More
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="col-lg-6 d-flex align-items-center justify-content-center">
+          {/* <div className="col-lg-4 d-flex align-items-center justify-content-center">
             <div className="position-relative w-100" style={{ height: "600px" }}>
               <img
                 src={heroimg}
@@ -60,7 +60,7 @@ export function HeroSection() {
                 className="img-fluid rounded-3 object-fit-cover w-100 h-100 img-hover-zoom"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

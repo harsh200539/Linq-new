@@ -1,5 +1,7 @@
 import "../../src/css/styles.css"
-export function Footer() {
+
+
+export default function footer() {
   return (
     <footer className="py-3 bg-linq-black text-linq-white text-center">
       <div className="container">
