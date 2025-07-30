@@ -52,7 +52,17 @@ body {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+  
 }
+
+@media (min-width: 320px) {
+  /* md:py-24 */
+  .linq_hero {
+   height: auto;
+  }
+  
+}
+
 
 @media (min-width: 1024px) {
   /* lg:py-32 */
