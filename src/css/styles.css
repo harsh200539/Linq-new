@@ -55,7 +55,7 @@ body {
   
 }
 
-@media (min-width: 320px) {
+@media (max-width: 380px) {
   /* md:py-24 */
   .linq_hero {
    height: auto;
