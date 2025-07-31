@@ -58,11 +58,11 @@ export function WhatWeDo() {
             </div>
           </div>
         </div>
-        <div className="text-center">
+        {/* <div className="text-center">
           <a href="#services" className="btn btn-lg btn-linq-primary ">
             Explore What We Do 
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   )

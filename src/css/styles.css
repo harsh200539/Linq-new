@@ -21,6 +21,9 @@ body {
                /* background-color: #062a46b4; */
                 position: sticky;
                 top: 0;}
+
+ .navbar_linq li :hover { color: #00e1ff !important;}  
+
 .navbar_linq img {width: 100px;}
 /* Hero Section Styles */
 .hero-section {
@@ -374,6 +377,7 @@ body {
 /* New styles for Life at LINQ features - Alternating layout */
 .linq-feature-block {
   display: flex;
+  height: 140px;
   align-items: center;
   padding: 1.5rem;
   margin-bottom: 1.5rem; /* Space between blocks */
@@ -456,5 +460,7 @@ body {
                height: auto;}
 
 
-.lifeatlinq {width: 400px;
-                 height: 100%;}               
+.lifeatlinq  {width: 400px;
+                 height: 100%;} 
+.lifeAtLinq img { width: 400px;
+                  height: 230px;}                               

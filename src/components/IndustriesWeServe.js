@@ -1,4 +1,4 @@
-import { FlaskConical, Leaf, Car, Ship, Heart, Plane, Droplet } from "lucide-react"
+import { FlaskConical, Leaf, Car, Ship, Heart, Plane, Droplet , Tractor } from "lucide-react"
 import "../../src/css/styles.css"
 export function IndustriesWeServe() {
   return (
@@ -32,7 +32,7 @@ export function IndustriesWeServe() {
           </div>
           <div className="col">
             <div className="card h-100 p-4 linq-card text-center">
-              <Leaf className="text-linq-dark mb-3 mx-auto" size={32} />
+              <Tractor className="text-linq-dark mb-3 mx-auto" size={32} />
               <h3 className="h5 fw-bold">Agriculture</h3>
             </div>
           </div>

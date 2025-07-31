@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section id="home" className="py-5 py-md-5 py-lg-5 bg-linq-dark text-linq-white position-relative overflow-hidden linq_hero">
       <div className="container">
-        <div className="row align-items-center g-4 g-lg-5 heroContant">
+        <div className="row align-items-center g-4 g-lg-5 heroContant ">
           <div className="col-lg-8">
             <div className="d-flex flex-column justify-content-center space-y-4">
               <div className="mb-4">

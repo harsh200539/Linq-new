@@ -1,46 +1,46 @@
-import { Users, Trophy, Building, MessageSquare, Award } from "lucide-react"; // Import new icons
+import { Users, Trophy, Building, MessageSquare, Award ,Briefcase ,PartyPopper , MessageSquareQuote , ThumbsUp, BookOpenText } from "lucide-react"; // Import new icons
 import "../../src/css/styles.css";
-import life1 from "../../src/images/life1.jpg";
-import life2 from "../../src/images/life2.jpg";
-import life3 from "../../src/images/life3.jpg";
-import life4 from "../../src/images/life4.jpg";
+import life1 from "../../src/images/LifeatLinq/1.jpeg";
+import life2 from "../../src/images/LifeatLinq/2.jpeg";
+import life3 from "../../src/images/LifeatLinq/3.jpeg";
+import life4 from "../../src/images/LifeatLinq/4.jpg";
 export function LifeAtLinq() {
   const features = [
     {
-      icon: Building,
-      title: "Modern Infrastructure",
+      icon: Briefcase,
+      title: "",
       description:
-        "Work in a state-of-the-art office with all the necessary amenities.",
+        "A close-knit, team-driven work environment",
+    },
+    {
+      icon: PartyPopper,
+      title: "",
+      description:
+        "Cricket matches, celebrations & team-building events",
     },
     {
       icon: Building,
-      title: "Modern Infrastructure",
+      title: "",
       description:
-        "Work in a state-of-the-art office with all the necessary amenities.",
+        "Modern office infrastructure",
     },
     {
-      icon: Building,
-      title: "Modern Infrastructure",
+      icon: MessageSquareQuote,
+      title: "",
       description:
-        "Work in a state-of-the-art office with all the necessary amenities.",
-    },
-    {
-      icon: Award,
-      title: "Recognition & Rewards",
-      description:
-        "Your hard work is valued and recognized with a rewards system.",
+        "Open-door communication and feedback culture",
     },
      {
-      icon: Award,
-      title: "Recognition & Rewards",
+      icon: ThumbsUp,
+      title: "",
       description:
-        "Your hard work is valued and recognized with a rewards system.",
+        "Recognition for good work",
     },
      {
-      icon: Award,
-      title: "Recognition & Rewards",
+      icon: BookOpenText,
+      title: "",
       description:
-        "Your hard work is valued and recognized with a rewards system.",
+        "Learning and growth at every step",
     },
   ];
 
@@ -71,7 +71,7 @@ export function LifeAtLinq() {
                       </div>
                       <div className="feature-content">
                         <h3 className="feature-title">{feature.title}</h3>
-                        <p className="feature-description">
+                        <p className="feature-description fw-bold display-4 lh-base">
                           {feature.description}
                         </p>
                       </div>
@@ -100,14 +100,15 @@ export function LifeAtLinq() {
              
             </div>
           </div>
+
           <div className="col-lg-6">
-            <div className="row row-cols-2 g-3">
-              <div className="col">
+            <div className="row row-cols-2 g-3 lifeAtLinq">
+              <div className="col ">
                 <img
                   src={life1}
                   alt="LINQ Moment 1"
-                  className="img-fluid rounded-3 object-fit-cover img-hover-zoom lifeatlinq"
-                  style={{ aspectRatio: "1/1" }}
+                  className="img-fluid rounded-3 object-fit-cover img-hover-zoom "
+                  // style={{ aspectRatio: "1/1" }}
                 />
               </div>
               <div className="col">
@@ -115,7 +116,7 @@ export function LifeAtLinq() {
                   src={life2}
                   alt="LINQ Moment 2"
                   className="img-fluid rounded-3 object-fit-cover img-hover-zoom lifeatlinq"
-                  style={{ aspectRatio: "1/1" }}
+                  // style={{ aspectRatio: "1/1" }}
                 />
               </div>
               <div className="col">
@@ -123,7 +124,7 @@ export function LifeAtLinq() {
                   src={life3}
                   alt="LINQ Moment 3"
                   className="img-fluid rounded-3 object-fit-cover img-hover-zoom lifeatlinq"
-                  style={{ aspectRatio: "1/1" }}
+                  // style={{ aspectRatio: "1/1" }}
                 />
               </div>
               <div className="col">
@@ -131,12 +132,13 @@ export function LifeAtLinq() {
                   src={life4}
                   alt="LINQ Moment 4"
                   className="img-fluid rounded-3 object-fit-cover img-hover-zoom lifeatlinq"
-                  style={{ aspectRatio: "1/1" }}
+                  // style={{ aspectRatio: "1/1" }}
                 />
               </div>
               
             </div>
           </div>
+          
            <div className="d-flex flex-column flex-sm-row gap-2 mt-4">
                 <a
                   href="#life-at-linq"

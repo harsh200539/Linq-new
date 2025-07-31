@@ -33,11 +33,11 @@ export function CareersSection() {
                   <li>• Mentorship & training programs</li>
                   <li>• Recognition & rewards system</li>
                 </ul>
-                <p className="lead text-muted mb-3">
+                {/* <p className="lead text-muted mb-3">
                   LINQ Corporate Solutions Pvt. Ltd. is an Equal Opportunity Employer. Join us and help drive tomorrow’s
                   innovations.
                 </p>
-                <p className="h5 fw-semibold text-linq-dark">Our motto: Work Hard. Play Hard. Grow Fast.</p>
+                <p className="h5 fw-semibold text-linq-dark">Our motto: Work Hard. Play Hard. Grow Fast.</p> */}
               </div>
               <div className="d-flex flex-column flex-sm-row gap-2"  onClick={() => navigate("/JoinourTeam")}>
                 <a href="#careers" className="btn btn-lg btn-outline-linq-dark ">
