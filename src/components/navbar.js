@@ -14,7 +14,7 @@ export function Navbar() {
           <Mountain className="me-2" size={24} />
           <span className="text-linq-white">LINQ Corporate Solutions</span>
         </a> */}
-        <img src={logo}  onClick={() => navigate("/home")}/>
+        <img src={logo}  onClick={() => navigate("/")}/>
         <button
           className="navbar-toggler"
           type="button"

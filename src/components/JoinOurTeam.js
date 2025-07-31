@@ -26,10 +26,10 @@ export function JoinOurTeam() {
                         <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Continuous learning opportunities</li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-end">
                     <img src={WhyChooseimg} alt="Team collaboration" class="img-fluid w-75 "/>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 

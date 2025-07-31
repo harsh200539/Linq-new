@@ -101,7 +101,7 @@ export function LifeAtLinq() {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          {/* <div className="col-lg-6">
             <div className="row row-cols-2 g-3 lifeAtLinq">
               <div className="col ">
                 <img
@@ -138,7 +138,7 @@ export function LifeAtLinq() {
               
             </div>
           </div>
-          
+           */}
            <div className="d-flex flex-column flex-sm-row gap-2 mt-4">
                 <a
                   href="#life-at-linq"
