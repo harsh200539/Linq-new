@@ -19,21 +19,47 @@ import { LifeAtLinq } from "./life-at-linq";
 import { Navbar } from "./navbar";
 import { WhatWeDo } from "./what-we-do";
 
-
 export default function LinqHome() {
   return (
+    // <div className="d-flex flex-column min-vh-100 bg-linq-white text-linq-black">
+    //   <Navbar />
+    //   <main className="flex-grow-1">
+    //     <HeroSection />
+    //     <AboutUs />
+    //     <WhatWeDo />
+    //     <IndustriesWeServe />
+    //     <LifeAtLinq />
+    //     <CareersSection />
+    //     <ContactUs />
+    //   </main>
+    //  <Footer />
+    // </div>
     <div className="d-flex flex-column min-vh-100 bg-linq-white text-linq-black">
       <Navbar />
       <main className="flex-grow-1">
-        <HeroSection />
-        <AboutUs />
-        <WhatWeDo />
-        <IndustriesWeServe />
-        <LifeAtLinq />
-        <CareersSection />
-        <ContactUs />
+        <div id="home">
+          <HeroSection />
+        </div>
+        <div id="about">
+          <AboutUs />
+        </div>
+        <div id="services">
+          <WhatWeDo />
+        </div>
+        <div id="industries">
+          <IndustriesWeServe />
+        </div>
+        <div id="">
+          <LifeAtLinq />
+        </div>
+         <div id="careers">
+          <CareersSection />
+        </div>
+        <div id="contact">
+          <ContactUs />
+        </div>
       </main>
-     <Footer />
+      <Footer />
     </div>
-  )
+  );
 }

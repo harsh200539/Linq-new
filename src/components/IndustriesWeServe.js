@@ -1,4 +1,6 @@
-import { FlaskConical, Leaf, Car, Ship, Heart, Plane, Droplet , Tractor } from "lucide-react"
+import { FlaskConical, Leaf, Car, Ship, Heart, Plane, Droplet , Tractor, Shield, Bubbles, ShieldCheck } from "lucide-react"
+import { MdSecurity } from "react-icons/md";
+
 import "../../src/css/styles.css"
 export function IndustriesWeServe() {
   return (
@@ -64,6 +66,24 @@ export function IndustriesWeServe() {
             <div className="card h-100 p-4 linq-card text-center">
               <Plane className="text-linq-dark mb-3 mx-auto" size={32} />
               <h3 className="h5 fw-bold">Aviation</h3>
+            </div>
+          </div>
+           <div className="col">
+            <div className="card h-100 p-4 linq-card text-center">
+              <Shield className="text-linq-dark mb-3 mx-auto" size={32} />
+              <h3 className="h5 fw-bold">Defence</h3>
+            </div>
+          </div>
+           <div className="col">
+            <div className="card h-100 p-4 linq-card text-center">
+              <Bubbles className="text-linq-dark mb-3 mx-auto" size={32} />
+              <h3 className="h5 fw-bold">Water Management</h3>
+            </div>
+          </div>
+           <div className="col">
+            <div className="card h-100 p-4 linq-card text-center">
+              <MdSecurity className="text-linq-dark mb-3 mx-auto" size={32} />
+              <h3 className="h5 fw-bold">Cybersecurity</h3>
             </div>
           </div>
         </div>

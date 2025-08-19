@@ -1,10 +1,17 @@
 import { Users, Trophy, Building, MessageSquare, Award ,Briefcase ,PartyPopper , MessageSquareQuote , ThumbsUp, BookOpenText } from "lucide-react"; // Import new icons
 import "../../src/css/styles.css";
+import { useNavigate } from "react-router-dom"
 import life1 from "../../src/images/LifeatLinq/1.jpeg";
 import life2 from "../../src/images/LifeatLinq/2.jpeg";
 import life3 from "../../src/images/LifeatLinq/3.jpeg";
-import life4 from "../../src/images/LifeatLinq/4.jpg";
+import life6 from "../../src/images/LifeatLinq/6.jpg";
+
+
+
+
+
 export function LifeAtLinq() {
+  const navigate= useNavigate ()
   const features = [
     {
       icon: Briefcase,
@@ -101,17 +108,17 @@ export function LifeAtLinq() {
             </div>
           </div>
 
-          {/* <div className="col-lg-6">
-            <div className="row row-cols-2 g-3 lifeAtLinq">
-              <div className="col ">
+          <div className="col-lg-6">
+            <div className="">
+              <div className="  ">
                 <img
-                  src={life1}
+                  src={life6}
                   alt="LINQ Moment 1"
-                  className="img-fluid rounded-3 object-fit-cover img-hover-zoom "
+                  className="img-fluid rounded-0 object-fit-cover  "
                   // style={{ aspectRatio: "1/1" }}
                 />
               </div>
-              <div className="col">
+              {/* <div className="col">
                 <img
                   src={life2}
                   alt="LINQ Moment 2"
@@ -134,17 +141,17 @@ export function LifeAtLinq() {
                   className="img-fluid rounded-3 object-fit-cover img-hover-zoom lifeatlinq"
                   // style={{ aspectRatio: "1/1" }}
                 />
-              </div>
+              </div> */}
               
             </div>
           </div>
-           */}
+          
            <div className="d-flex flex-column flex-sm-row gap-2 mt-4">
                 <a
                   href="#life-at-linq"
-                  className="btn btn-lg btn-lg btn-linq-primary "
+                  className="btn btn-lg btn-lg btn-linq-primary "  onClick={() => navigate("/ImgGallery")}
                 >
-                  Discover Life at LINQ
+                  Discover Life at LINQ  
                 </a>
               </div>
         </div>

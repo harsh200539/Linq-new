@@ -14,7 +14,7 @@ export function CareersSection() {
               <img
                 src={Joinus}
                 alt="Career Growth"
-                className="img-fluid rounded-3 object-fit-cover w-75 "
+                className="img-fluid  object-fit-cover w-100 "
               />
             </div>
           </div>

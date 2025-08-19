@@ -464,3 +464,16 @@ body {
                  height: 100%;} 
 .lifeAtLinq img { width: 400px;
                   height: 230px;}                               
+
+
+                  /* Add this to your styles.css */
+html {
+  scroll-padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+/* For mobile responsiveness */
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
