@@ -1,39 +1,18 @@
-import "../../src/css/styles.css"
-import '../css/JoinOurTeam.css'
-import { Navbar } from "./navbar"
+import "../../src/css/styles.css";
+import "../css/JoinOurTeam.css";
+import { Navbar } from "./navbar";
 import life1 from "../../src/images/life1.jpg";
-import WhyChooseimg from '../images/whyus.jpg'
+import WhyChooseimg from "../images/whyus.jpg";
 import Footer from "./footer";
-import { useNavigate } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom";
 
 export function JoinOurTeam() {
-    const navigate= useNavigate ()
+  const navigate = useNavigate();
   return (
-  
-   <div>
-<Navbar />
- <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center ">
-                <div class="col-lg-6">
-                    <h2 class="display-6 fw-bold mb-2">Why Choose LINQ?</h2>
-                    <p class="lead text-muted mb-3">At LINQ Corporate Solutions, we believe in fostering innovation, collaboration, and professional growth. Our team of 350+ professionals across two shifts ensures 24/7 research and client service delivery.</p>
-                    <ul class="list-unstyled lead text-muted mb-3">
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Global reach with local expertise</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Cutting-edge research methodologies</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Collaborative work environment</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Continuous learning opportunities</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-end">
-                    <img src={WhyChooseimg} alt="Team collaboration" class="img-fluid w-75 "/>
-                </div>
-            </div> 
-        </div>
-    </section>
+    <div>
+      <Navbar />
 
- {/* <section id="" className="py-5 py-md-5 py-lg-5 bg-linq-white text-linq-black">
+      {/* <section id="" className="py-5 py-md-5 py-lg-5 bg-linq-white text-linq-black">
       <div className="container">
         <div className="row align-items-center g-4 g-lg-5">
           <div className="col-lg-6 d-flex align-items-center justify-content-center order-lg-first">
@@ -64,91 +43,190 @@ export function JoinOurTeam() {
       </div>
     </section> */}
 
- <section class="looking-for-section bg-linq-dark " id="positions">
+      <section class="looking-for-section bg-linq-dark " id="positions">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-7 fw-bold mb-2 text-linq-white">We're Looking For</h2>
-                <p class="lead text-linq-white">Join our talented team and help us deliver exceptional results to clients worldwide</p>
+          <div class="text-center mb-5">
+            <h2 class="display-7 fw-bold mb-2 text-linq-white">
+              We're Looking For
+            </h2>
+            <p class="lead text-linq-white">
+              Join our talented team and help us deliver exceptional results to
+              clients worldwide
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div class="position-card">
+                <h5>
+                  <i class="fas fa-chart-line me-2"></i>Market Research Analysts
+                </h5>
+                <p class="mb-3">
+                  Conduct in-depth data analysis to provide actionable market
+                  insights across various industries.
+                </p>
+                <ul class="list-unstyled mb-3">
+                  <li>
+                    <small>
+                      <i class="fas fa-map-marker-alt me-1"></i> Vadodara, India
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-clock me-1"></i> Full-time
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-graduation-cap me-1"></i> Bachelor's in
+                      Business/Economics
+                    </small>
+                  </li>
+                </ul>
+                {/* <button class="btn btn-outline-primary btn-sm" onClick={() => navigate("/JobDescription")}>Apply Now</button> */}
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="position-card">
-                        <h5><i class="fas fa-chart-line me-2"></i>Market Research Analysts</h5>
-                        <p class="mb-3">Conduct in-depth data analysis to provide actionable market insights across various industries.</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><small><i class="fas fa-map-marker-alt me-1"></i> Vadodara, India</small></li>
-                            <li><small><i class="fas fa-clock me-1"></i> Full-time</small></li>
-                            <li><small><i class="fas fa-graduation-cap me-1"></i> Bachelor's in Business/Economics</small></li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm" onClick={() => navigate("/JobDescription")}>Apply Now</button>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="position-card">
-                        <h5><i class="fas fa-lightbulb me-2"></i>Strategic Advisors</h5>
-                        <p class="mb-3">Conduct in-depth data analysis to provide actionable market insights across various industries.</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><small><i class="fas fa-map-marker-alt me-1"></i> Vadodara, India</small></li>
-                            <li><small><i class="fas fa-clock me-1"></i> Full-time</small></li>
-                            <li><small><i class="fas fa-graduation-cap me-1"></i> MBA preferred</small></li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm">Apply Now</button>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="position-card">
-                        <h5><i class="fas fa-database me-2"></i>Data Management Specialists</h5>
-                        <p class="mb-3">Conduct in-depth data analysis to provide actionable market insights across various industries.</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><small><i class="fas fa-map-marker-alt me-1"></i> Vadodara, India</small></li>
-                            <li><small><i class="fas fa-clock me-1"></i> Full-time</small></li>
-                            <li><small><i class="fas fa-graduation-cap me-1"></i> Computer Science/IT</small></li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm">Apply Now</button>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="position-card">
-                        <h5><i class="fas fa-code me-2"></i>Web Developers</h5>
-                        <p class="mb-3">Conduct in-depth data analysis to provide actionable market insights across various industries.</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><small><i class="fas fa-map-marker-alt me-1"></i> Vadodara, India</small></li>
-                            <li><small><i class="fas fa-clock me-1"></i> Full-time</small></li>
-                            <li><small><i class="fas fa-graduation-cap me-1"></i> Computer Science/Web Development</small></li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm">Apply Now</button>
-                    </div>
-                </div>
-                {/* <div class="col-lg-6 mb-4">
-                    <div class="position-card">
-                        <h5><i class="fas fa-chart-bar me-2"></i>Industry Intelligence Analysts</h5>
-                        <p class="mb-3">Conduct in-depth data analysis to provide actionable market insights across various industries.</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><small><i class="fas fa-map-marker-alt me-1"></i> Vadodara, India</small></li>
-                            <li><small><i class="fas fa-clock me-1"></i> Full-time</small></li>
-                            <li><small><i class="fas fa-graduation-cap me-1"></i> Industry-specific background preferred</small></li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm">Apply Now</button>
-                    </div>
-                </div> */}
-                {/* <div class="col-lg-6 mb-4">
-                    <div class="position-card">
-                        <h5><i class="fas fa-bullhorn me-2"></i>Marketing & Operations Support</h5>
-                        <p class="mb-3">Conduct in-depth data analysis to provide actionable market insights across various industries.</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><small><i class="fas fa-map-marker-alt me-1"></i> Vadodara, India</small></li>
-                            <li><small><i class="fas fa-clock me-1"></i> Full-time</small></li>
-                            <li><small><i class="fas fa-graduation-cap me-1"></i> Marketing/Business Administration</small></li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm">Apply Now</button>
-                    </div>
-                </div> */}
+            <div class="col-lg-6 mb-4">
+              <div class="position-card">
+                <h5>
+                  <i class="fas fa-lightbulb me-2"></i>Strategic Advisors
+                </h5>
+                <p class="mb-3">
+                  Conduct in-depth data analysis to provide actionable market
+                  insights across various industries.
+                </p>
+                <ul class="list-unstyled mb-3">
+                  <li>
+                    <small>
+                      <i class="fas fa-map-marker-alt me-1"></i> Vadodara, India
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-clock me-1"></i> Full-time
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-graduation-cap me-1"></i> MBA preferred
+                    </small>
+                  </li>
+                </ul>
+                {/* <button class="btn btn-outline-primary btn-sm">Apply Now</button> */}
+              </div>
             </div>
+            <div class="col-lg-6 mb-4">
+              <div class="position-card">
+                <h5>
+                  <i class="fas fa-database me-2"></i>Data Management
+                  Specialists
+                </h5>
+                <p class="mb-3">
+                  Conduct in-depth data analysis to provide actionable market
+                  insights across various industries.
+                </p>
+                <ul class="list-unstyled mb-3">
+                  <li>
+                    <small>
+                      <i class="fas fa-map-marker-alt me-1"></i> Vadodara, India
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-clock me-1"></i> Full-time
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-graduation-cap me-1"></i> Computer
+                      Science/IT
+                    </small>
+                  </li>
+                </ul>
+                {/* <button class="btn btn-outline-primary btn-sm">Apply Now</button> */}
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="position-card">
+                <h5>
+                  <i class="fas fa-code me-2"></i>Web Developers
+                </h5>
+                <p class="mb-3">
+                  Conduct in-depth data analysis to provide actionable market
+                  insights across various industries.
+                </p>
+                <ul class="list-unstyled mb-3">
+                  <li>
+                    <small>
+                      <i class="fas fa-map-marker-alt me-1"></i> Vadodara, India
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-clock me-1"></i> Full-time
+                    </small>
+                  </li>
+                  <li>
+                    <small>
+                      <i class="fas fa-graduation-cap me-1"></i> Computer
+                      Science/Web Development
+                    </small>
+                  </li>
+                </ul>
+                {/* <button class="btn btn-outline-primary btn-sm">Apply Now</button> */}
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="text-center">
+          <p class="lead text-linq-white">
+            To apply for any position, please send your resume to:
+            hello@linq-corporate.com
+          </p>
+        </div>
+      </section>
 
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center ">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold mb-2">Why Choose LINQ?</h2>
+              <p class="lead text-muted mb-3">
+                At LINQ Corporate Solutions, we believe in fostering innovation,
+                collaboration, and professional growth. Our team of 350+
+                professionals across two shifts ensures 24/7 research and client
+                service delivery.
+              </p>
+              <ul class="list-unstyled lead text-muted mb-3">
+                <li class="mb-2">
+                  <i class="fas fa-check text-warning me-2"></i> Global reach
+                  with local expertise
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-warning me-2"></i> Cutting-edge
+                  research methodologies
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-warning me-2"></i> Collaborative
+                  work environment
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check text-warning me-2"></i> Continuous
+                  learning opportunities
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+              <img
+                src={WhyChooseimg}
+                alt="Team collaboration"
+                class="img-fluid w-75 "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="application-section ">
+      {/* <section class="application-section ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -208,10 +286,9 @@ export function JoinOurTeam() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
-   <Footer />
-   </div>
-  
-  )
+      <Footer />
+    </div>
+  );
 }

@@ -87,12 +87,15 @@ export function IndustriesWeServe() {
             </div>
           </div>
         </div>
-        <div className="text-center">
+        {/* <div className="text-center">
           <a href="#industries" className="btn btn-lg btn-outline-linq-dark ">
             View All Industries
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   )
 }
+
+
+

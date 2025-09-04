@@ -46,15 +46,21 @@ export default function LinqHome() {
         <div id="services">
           <WhatWeDo />
         </div>
-        <div id="industries">
-          <IndustriesWeServe />
-        </div>
-        <div id="">
-          <LifeAtLinq />
-        </div>
          <div id="careers">
           <CareersSection />
         </div>
+        {/* <div id="industries">
+          <IndustriesWeServe />
+        </div> */}
+        <div id="">
+          <LifeAtLinq />
+        </div>
+         <div id="industries">
+          <IndustriesWeServe />
+        </div>
+         {/* <div id="careers">
+          <CareersSection />
+        </div> */}
         <div id="contact">
           <ContactUs />
         </div>

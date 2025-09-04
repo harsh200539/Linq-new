@@ -1,5 +1,5 @@
 import "../../src/css/styles.css"
-import Aboutimg1 from '../images/AboutUs.jpg'
+import Aboutimg1 from '../images/AboutUs.png'
 export function AboutUs() {
   return (
     <section id="about" className="py-5 py-md-5 py-lg-5 bg-linq-white text-linq-black">

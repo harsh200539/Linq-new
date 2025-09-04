@@ -8,8 +8,8 @@
     "1fr 1fr 1fr 1fr 1fr" 33.33vh
     "1fr 1fr 1fr 1fr 1fr" 33.33vh
     "1fr 1fr 1fr 1fr 1fr" 33.33vh
-    "1fr 1fr 1fr 1fr 1fr" 33.33vh
-    "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    /* "1fr 1fr 1fr 1fr 1fr" 33.33vh */
+    /* "1fr 1fr 1fr 1fr 1fr" 33.33vh; */
 }
 
 .imgcontainer .box {
@@ -57,4 +57,8 @@
 }
 .imgcontainer .box.h {
   grid-column: span 1;
+}
+.imgcontainer .box.ds {
+  grid-column: span 2;
+  grid-row: span 2;
 }

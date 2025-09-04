@@ -1,5 +1,5 @@
 import "../../src/css/styles.css"
-import Joinus from '../images/joinus.jpg'
+import Joinus from '../images/joinus.png'
 import { useNavigate } from "react-router-dom"
 
 export function CareersSection() {

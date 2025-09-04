@@ -176,7 +176,8 @@ export function Navbar() {
       <div className="container">
         <img 
           src={logo} 
-          onClick={() => navigate("/")}
+          // onClick={() => navigate("/")}
+          onClick={() => handleNavClick('home')}
           style={{ cursor: 'pointer' }}
           alt="LINQ Logo"
         />
@@ -198,7 +199,8 @@ export function Navbar() {
             <li className="nav-item mx-2">
               <button 
                 className="nav-link text-linq-white bg-transparent border-0"
-                onClick={() => navigate("/")}
+                // onClick={() => navigate("/")}
+                onClick={() => handleNavClick('home')}
               >
                 Home
               </button>
@@ -222,9 +224,9 @@ export function Navbar() {
             <li className="nav-item mx-2">
               <button 
                 className="nav-link text-linq-white bg-transparent border-0"
-                onClick={() => handleNavClick('industries')}
+                onClick={() => handleNavClick('life-at-linq')}
               >
-                Industries
+                Life at Linq
               </button>
             </li>
             <li className="nav-item mx-2">
