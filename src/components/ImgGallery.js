@@ -20,8 +20,9 @@ import img15 from '../images/Img/WhatsApp Image 2025-07-25 at 7.58.22 PM.jpeg'
 import img16 from '../images/Img/WhatsApp Image 2025-07-25 at 7.58.22 PM.jpeg'
 import img17 from '../images/Img/christmas.jpeg'
 import ds1 from '../images/Img/ds1.jpeg'
-import ds2 from '../images/Img/ds2.jpeg'
-import dsMain from '../images/Img/F1.jpeg'
+import m2 from '../images/Img/m2.jpg'
+import f1 from '../images/Img/F1.jpeg'
+import v3 from '../images/Img/v3.jpg'
 
 
 
@@ -45,9 +46,11 @@ export default function ImgGallery() {
      <div class="box g"><img src={img7} alt="" /></div>
     <div class="box h"><img src={img8} alt="" /></div>
     <div class="box i"><img src={img9} alt="" /></div>
-    <div class="box ds"><img src={ds2} alt="" /></div> 
+    {/* <div class="box ds"><img src={v2} alt="" /></div>  */}
     <div class="box a"><img src={img11} alt="" /></div>
-    <div class="box f"><img src={dsMain} alt="" /></div>
+    <div class="box f"><img src={f1} alt="" /></div>
+     <div class="box f"><img src={v3} alt="" /></div>
+      <div class="box f"><img src={m2} alt="" /></div>
     {/* <div class="box b"><img src={img14} alt="" /></div> */}
     {/* <div class="box c"><img src={img15} alt="" /></div> */}
    {/* <div class="box c"><img src={img16} alt="" /></div>

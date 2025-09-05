@@ -55,14 +55,13 @@ export function JoinOurTeam() {
             </p>
           </div>
           <div class="row">
-            <div class="col-lg-6 mb-4">
-              <div class="position-card">
+            <div class="col-lg-6 mb-4 ">
+              <div class="position-card ">
                 <h5>
-                  <i class="fas fa-chart-line me-2"></i>Market Research Analysts
+                  <i class="fas fa-chart-line me-2"></i>Google Ads & Google Analytics Specialist
                 </h5>
                 <p class="mb-3">
-                  Conduct in-depth data analysis to provide actionable market
-                  insights across various industries.
+                  Google Ads: Plan, execute, and manage paid ad campaigns on Google Search, Display, and YouTube.
                 </p>
                 <ul class="list-unstyled mb-3">
                   <li>
@@ -85,14 +84,13 @@ export function JoinOurTeam() {
                 {/* <button class="btn btn-outline-primary btn-sm" onClick={() => navigate("/JobDescription")}>Apply Now</button> */}
               </div>
             </div>
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-6 mb-4 ">
               <div class="position-card">
                 <h5>
-                  <i class="fas fa-lightbulb me-2"></i>Strategic Advisors
+                  <i class="fas fa-lightbulb me-2"></i>Associate / Specialist – English Content Writer & Editor
                 </h5>
                 <p class="mb-3">
-                  Conduct in-depth data analysis to provide actionable market
-                  insights across various industries.
+                  Edit & proofread content to be 100% factually correct, engaging, and error-free
                 </p>
                 <ul class="list-unstyled mb-3">
                   <li>
@@ -107,74 +105,14 @@ export function JoinOurTeam() {
                   </li>
                   <li>
                     <small>
-                      <i class="fas fa-graduation-cap me-1"></i> MBA preferred
+                      <i class="fas fa-graduation-cap me-1"></i> Bachelor’s degree in English, Marketing, Communications, or PR
                     </small>
                   </li>
                 </ul>
                 {/* <button class="btn btn-outline-primary btn-sm">Apply Now</button> */}
               </div>
             </div>
-            <div class="col-lg-6 mb-4">
-              <div class="position-card">
-                <h5>
-                  <i class="fas fa-database me-2"></i>Data Management
-                  Specialists
-                </h5>
-                <p class="mb-3">
-                  Conduct in-depth data analysis to provide actionable market
-                  insights across various industries.
-                </p>
-                <ul class="list-unstyled mb-3">
-                  <li>
-                    <small>
-                      <i class="fas fa-map-marker-alt me-1"></i> Vadodara, India
-                    </small>
-                  </li>
-                  <li>
-                    <small>
-                      <i class="fas fa-clock me-1"></i> Full-time
-                    </small>
-                  </li>
-                  <li>
-                    <small>
-                      <i class="fas fa-graduation-cap me-1"></i> Computer
-                      Science/IT
-                    </small>
-                  </li>
-                </ul>
-                {/* <button class="btn btn-outline-primary btn-sm">Apply Now</button> */}
-              </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="position-card">
-                <h5>
-                  <i class="fas fa-code me-2"></i>Web Developers
-                </h5>
-                <p class="mb-3">
-                  Conduct in-depth data analysis to provide actionable market
-                  insights across various industries.
-                </p>
-                <ul class="list-unstyled mb-3">
-                  <li>
-                    <small>
-                      <i class="fas fa-map-marker-alt me-1"></i> Vadodara, India
-                    </small>
-                  </li>
-                  <li>
-                    <small>
-                      <i class="fas fa-clock me-1"></i> Full-time
-                    </small>
-                  </li>
-                  <li>
-                    <small>
-                      <i class="fas fa-graduation-cap me-1"></i> Computer
-                      Science/Web Development
-                    </small>
-                  </li>
-                </ul>
-                {/* <button class="btn btn-outline-primary btn-sm">Apply Now</button> */}
-              </div>
-            </div>
+           
           </div>
         </div>
         <div class="text-center">

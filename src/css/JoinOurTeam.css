@@ -71,6 +71,7 @@
 
         .position-card {
             background: white;
+            height: 250px;
             border-radius: 10px;
             padding: 30px;
             margin-bottom: 30px;
