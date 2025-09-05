@@ -60,73 +60,73 @@ export function ContactForm() {
     }
     setIsSubmitting(true);
 
-    const finalData = new FormData();
-    finalData.append("name", formData?.name);
-    finalData.append("email", formData?.email);
-    finalData.append("subject", formData?.subject);
-    finalData.append("message", formData?.message);
-    const requestOptions = {
-      method: "POST",
-      body: finalData,
-    };
-    // Handle form submission logic here (e.g., send data to an API)
-    console.log("Form submitted!", formData);
+    // const finalData = new FormData();
+    // finalData.append("name", formData?.name);
+    // finalData.append("email", formData?.email);
+    // finalData.append("subject", formData?.subject);
+    // finalData.append("message", formData?.message);
+    // const requestOptions = {
+    //   method: "POST",
+    //   body: finalData,
+    // };
+    // // Handle form submission logic here (e.g., send data to an API)
+    // console.log("Form submitted!", formData);
 
-    fetch("http://127.0.0.1:8000/admin1/addemailtraffic", requestOptions)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.status) {
-          toast.success(
-            "Thank you for your message! We will get back to you soon..",
-            {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            }
-          );
-          setFormData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-          setErrors({});
-          setIsSubmitting(false);
-        } else {
-          toast.error(data?.message);
-        }
-      })
-      .catch((error) => {
-        console.log("error: ", error);
-        toast.error("There was an error, Please try again later.", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-      });
+    // fetch("http://127.0.0.1:8000/admin1/addemailtraffic", requestOptions)
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     if (data.status) {
+    //       toast.success(
+    //         "Thank you for your message! We will get back to you soon..",
+    //         {
+    //           position: "top-right",
+    //           autoClose: 5000,
+    //           hideProgressBar: false,
+    //           closeOnClick: true,
+    //           pauseOnHover: true,
+    //           draggable: true,
+    //           progress: undefined,
+    //         }
+    //       );
+    //       setFormData({
+    //         name: "",
+    //         email: "",
+    //         subject: "",
+    //         message: "",
+    //       });
+    //       setErrors({});
+    //       setIsSubmitting(false);
+    //     } else {
+    //       toast.error(data?.message);
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     console.log("error: ", error);
+    //     toast.error("There was an error, Please try again later.", {
+    //       position: "top-right",
+    //       autoClose: 5000,
+    //       hideProgressBar: false,
+    //       closeOnClick: true,
+    //       pauseOnHover: true,
+    //       draggable: true,
+    //       progress: undefined,
+    //     });
+    //   });
 
     // Simulate API call
-    // setTimeout(() => {
-    //   alert("Thank you for your message! We will get back to you soon.");
+    setTimeout(() => {
+      alert("Thank you for your message! We will get back to you soon.");
 
-    //   // Reset form after successful submission
-    //   setFormData({
-    //     name: "",
-    //     email: "",
-    //     subject: "",
-    //     message: "",
-    //   });
-    //   setErrors({});
-    //   setIsSubmitting(false);
-    // }, 1000);
+      // Reset form after successful submission
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      setErrors({});
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   return (
