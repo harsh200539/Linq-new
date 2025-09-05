@@ -21,7 +21,7 @@ import img16 from '../images/Img/WhatsApp Image 2025-07-25 at 7.58.22 PM.jpeg'
 import img17 from '../images/Img/christmas.jpeg'
 import ds1 from '../images/Img/ds1.jpeg'
 import ds2 from '../images/Img/ds2.jpeg'
-import dsMain from '../images/Img/ds_main.jpeg'
+import dsMain from '../images/Img/F1.jpeg'
 
 
 
