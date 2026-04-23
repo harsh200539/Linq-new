@@ -1,0 +1,190 @@
+.service-detail-hero {
+    position: relative;
+    padding: 160px 0 100px;
+    background: #05243c;
+    color: white;
+    overflow: hidden;
+}
+
+.service-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(5, 36, 60, 0.4) 0%, rgba(5, 36, 60, 1) 100%);
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6f0f7;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-detail-section {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.service-detail-section.bg-white {
+    background: #ffffff;
+}
+
+/* Problem / Solution Cards */
+.prob-sol-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.prob-sol-card.problem {
+    border-top-color: #fca5a5;
+}
+
+.prob-sol-card.solution {
+    border-top-color: #6ee7b7;
+}
+
+.prob-sol-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Timeline (Step-by-step UI) */
+.process-timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.process-step {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-marker {
+    position: absolute;
+    left: -40px;
+    width: 32px;
+    height: 32px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 0 0 4px #e6f0f7;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover .step-marker {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 6px #bfdbfe;
+}
+
+.step-content {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover .step-content {
+    transform: translateX(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Tools Grid */
+.tool-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: #05243c;
+    color: white;
+}
+
+.tool-card:hover .icon-wrapper-small {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e6f0f7;
+}
+
+/* Case Preview Metric */
+.case-preview-card {
+    background: linear-gradient(135deg, #05243c 0%, #007bff 100%);
+    border-radius: 12px;
+    padding: 60px 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2);
+}
+
+.case-metric {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: #e6f0f7;
+}
+
+/* Specific Section Headers */
+h3.section-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}

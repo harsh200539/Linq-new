@@ -1,0 +1,32 @@
+:root {
+    --font-nunito-sans: 'Nunito Sans', sans-serif;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+    font-family: var(--font-nunito-sans), sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+::selection {
+    background: transparent;
+}
+
+input,
+textarea {
+    user-select: text;
+    /* Allow selection inside inputs */
+    cursor: text;
+}

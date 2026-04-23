@@ -1,0 +1,214 @@
+/* src/css/Industries.css */
+
+.id-section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Ambient Orbs for Depth */
+.id-section::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.05), transparent 70%);
+    top: -200px;
+    right: -200px;
+    z-index: 0;
+}
+
+.id-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.id-header {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* Reusing the About Us premium header style tokens */
+.id-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 123, 255, 0.07);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.id-label-dot {
+    width: 7px;
+    height: 7px;
+    background: #007bff;
+    border-radius: 50%;
+    animation: idPulse 2s infinite;
+}
+
+@keyframes idPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.7);
+        opacity: 0.4;
+    }
+}
+
+.id-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    color: #0b1120;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.id-gradient-text {
+    background: linear-gradient(135deg, #007bff 0%, #00aaff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.id-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Industry Grid & Cards */
+.id-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.id-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+    padding: 40px 24px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Card Glow Effect on Hover */
+.id-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(0, 123, 255, 0.04), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.id-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 123, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06), 0 0 20px rgba(0, 123, 255, 0.1);
+}
+
+.id-card:hover::before {
+    opacity: 1;
+}
+
+.id-icon-wrap {
+    width: 72px;
+    height: 72px;
+    background: #f1f5f9;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f172a;
+    margin-bottom: 24px;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.id-card:hover .id-icon-wrap {
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #ffffff;
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+.id-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.id-card:hover .id-card-title {
+    color: #007bff;
+}
+
+.id-card-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-top: auto;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .id-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .id-section {
+        padding: 80px 0;
+    }
+
+    .id-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .id-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .id-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .id-card {
+        padding: 32px 20px;
+    }
+}

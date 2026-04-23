@@ -1,0 +1,73 @@
+/* src/css/LandingSections.css */
+
+/* Global Premium Section Header Styles */
+.premium-section {
+    padding: 120px 0;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-section-header {
+    text-align: center;
+    margin-bottom: 72px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.premium-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 123, 255, 0.07);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.premium-label-dot {
+    width: 7px;
+    height: 7px;
+    background: #007bff;
+    border-radius: 50%;
+    animation: premiumPulse 2s infinite;
+}
+
+@keyframes premiumPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.7); opacity: 0.4; }
+}
+
+.premium-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    color: #0b1120;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.premium-gradient-text {
+    background: linear-gradient(135deg, #007bff 0%, #00aaff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.premium-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Base adjustment for sections using this style */
+.testimonials-section, .id-section, .get_in_touch {
+    padding: 120px 0 !important;
+}

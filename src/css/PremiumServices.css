@@ -1,0 +1,356 @@
+/* src/css/PremiumServices.css */
+
+/* Global Premium Tokens for Services Hub */
+.premium-services-hub {
+    background-color: #ffffff;
+    color: #05243c;
+    overflow-x: hidden;
+}
+
+/* 2. Services Grid (Core) */
+.premium-service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    height: 100%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.premium-service-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.05) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.premium-service-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 123, 255, 0.2);
+}
+
+.premium-service-card:hover::before {
+    opacity: 1;
+}
+
+.service-icon-blob {
+    width: 64px;
+    height: 64px;
+    background: #e6f0f7;
+    border-radius: 16px;
+    /* Squircle feel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.premium-service-card:hover .service-icon-blob {
+    background: #007bff;
+    color: #ffffff;
+    transform: rotate(5deg) scale(1.1);
+}
+
+.learn-more-link {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 20px;
+    opacity: 0.8;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+.premium-service-card:hover .learn-more-link {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+/* 3. Industries We Serve (Tooltip Grid) */
+.industry-hover-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.industry-hover-card .industry-icon {
+    color: #05243c;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.industry-hover-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #05243c;
+    margin: 0;
+}
+
+.industry-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #05243c;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.industry-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #05243c transparent transparent transparent;
+}
+
+.industry-hover-card:hover {
+    background: #05243c;
+}
+
+.industry-hover-card:hover h4,
+.industry-hover-card:hover .industry-icon {
+    color: #ffffff;
+}
+
+.industry-hover-card:hover .industry-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* 4. Process Section (High-End SaaS Stepper) */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.process-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 123, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Background Number Data-Step (01, 02...) */
+.process-card::before {
+    content: attr(data-step);
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 123, 255, 0.03);
+    line-height: 1;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 123, 255, 0.2);
+}
+
+.process-card:hover::before {
+    color: rgba(0, 123, 255, 0.08);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.process-icon-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    background: #e6f0f7;
+    color: #007bff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+}
+
+.process-card:hover .process-icon-wrapper {
+    background: linear-gradient(135deg, #007bff, #00d2ff);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+.process-title {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #05243c;
+    margin-bottom: 12px;
+}
+
+.process-desc {
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .process-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* 6. Infinite Marquee Tools */
+.tools-marquee-section {
+    background: #ffffff;
+    padding: 80px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.tools-marquee-section::before,
+.tools-marquee-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+}
+
+.tools-marquee-section::before {
+    left: 0;
+    background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.tools-marquee-section::after {
+    right: 0;
+    background: linear-gradient(to left, #ffffff, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    width: calc(200px * 14);
+    /* Number of items * width */
+    animation: scrollMarquee 40s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.marquee-item {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.3s ease;
+}
+
+.marquee-item:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-200px * 7));
+    }
+
+    /* Half of total */
+}
+
+/* FAQ Accordion Styling (For Service Detail) */
+.premium-accordion .accordion-item {
+    border: none;
+    border-radius: 12px !important;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.premium-accordion .accordion-button {
+    font-weight: 700;
+    color: #05243c;
+    padding: 20px 25px;
+    background: #ffffff;
+    border: none;
+    box-shadow: none !important;
+}
+
+.premium-accordion .accordion-button:not(.collapsed) {
+    background: #e6f0f7;
+    color: #007bff;
+}
+
+.premium-accordion .accordion-body {
+    background: #ffffff;
+    padding: 0 25px 25px;
+    color: #495057;
+    line-height: 1.7;
+}
+
+/* Benefits Grid (For Service Detail) */
+.benefit-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    height: 100%;
+}
+
+.benefit-card .check-icon {
+    color: #007bff;
+    flex-shrink: 0;
+}

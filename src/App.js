@@ -1,30 +1,24 @@
-// import { Home } from "lucide-react";
-import { Home } from "lucide-react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LinqHome from "./components/LinqHome";
-import { JoinOurTeam } from "./components/JoinOurTeam";
-import JobDescription from "./components/JobDescription";
-import ImgGallery from "./components/ImgGallery";
-import ScrollToTop from "./components/ScrollToTop";
+"use client";
+import { Navbar } from "./Shared/navbar";
+import Footer from "./Shared/footer";
+import LinqHome from "./Landing/LinqHome";
+import LifeAtLinqPage from "./LifeAtLinq/LifeAtLinqPage";
+import Testimonials from "./Landing/testimonials";
+import ContactPage from "./Contact/ContactPage";
 
-
-
-function App() {
+export default function App({ testimonials }) {
   return (
-    <>
-      <BrowserRouter>
-       <ScrollToTop />
-        <Routes>
-          <Route path="/">
-         <Route index element={<LinqHome />}/>
-         <Route path="JoinourTeam" element={<JoinOurTeam />} />
-         <Route path="JobDescription" element={<JobDescription />} />
-         <Route path="ImgGallery" element={<ImgGallery />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <div className="d-flex flex-column min-vh-100 bg-linq-white text-linq-black">
+      <Navbar />
+      <main className="flex-grow-1">
+        <LinqHome />
+        <LifeAtLinqPage />
+        <div id="testimonials">
+          <Testimonials initialTestimonials={testimonials} />
+        </div>
+        <ContactPage />
+      </main>
+      <Footer />
+    </div>
   );
 }
-export default App;

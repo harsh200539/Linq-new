@@ -1,0 +1,174 @@
+/* src/css/Hero.css */
+
+.linq_hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 100px 0 60px;
+    background: #0b1120; /* Dark fallback */
+}
+
+/* Background Slider Overlay refinement */
+.linq-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 17, 32, 0.75); /* Strong dark tint */
+    background: linear-gradient(
+        to bottom,
+        rgba(11, 17, 32, 0.85) 0%,
+        rgba(11, 17, 32, 0.6) 50%,
+        rgba(11, 17, 32, 0.85) 100%
+    );
+    z-index: 1;
+}
+
+.linq-hero-content {
+    z-index: 2;
+}
+
+/* Brand & Typography */
+.hero-brand {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.hero-headline {
+    font-size: clamp(2.2rem, 5.5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.hero-tagline {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 1000px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+/* Primary CTA */
+.hero-cta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.btn-premium-lg {
+    background: linear-gradient(135deg, #007bff 0%, #00aaff 100%);
+    color: #fff;
+    padding: 18px 44px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.05rem;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-premium-lg:hover {
+    transform: scale(1.03) translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.4);
+    color: #fff;
+}
+
+/* Navigation Cards (Glassmorphism) */
+.hero-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.nav-glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #ffffff;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon-blob {
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00d2ff;
+    margin-bottom: 24px;
+}
+
+.nav-glass-card h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.nav-glass-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.nav-arrow {
+    font-size: 1.25rem;
+    color: #00d2ff;
+    transition: transform 0.3s ease;
+    align-self: flex-end;
+}
+
+.nav-glass-card:hover .nav-arrow {
+    transform: translateX(6px);
+}
+
+/* Base Responsive */
+@media (max-width: 992px) {
+    .hero-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .linq_hero {
+        padding: 120px 0 60px;
+    }
+    .hero-nav-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-cta {
+        justify-content: center;
+    }
+    .hero-header-stack {
+        text-align: center;
+    }
+}

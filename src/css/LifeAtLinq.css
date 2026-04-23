@@ -1,0 +1,130 @@
+/* src/css/LifeAtLinq.css */
+
+.life-at-linq-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.life-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 420px;
+    background: #0f172a; /* Fallback for loading */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.life-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 32px 64px rgba(0, 123, 255, 0.15);
+    border-color: rgba(0, 123, 255, 0.2);
+}
+
+.life-img-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.life-img {
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.life-card:hover .life-img {
+    transform: scale(1.1);
+}
+
+.life-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11, 17, 32, 0.9) 0%, rgba(11, 17, 32, 0.4) 40%, transparent 100%);
+    z-index: 2;
+    opacity: 0.8;
+    transition: opacity 0.4s ease;
+}
+
+.life-card:hover .life-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 123, 255, 0.7) 0%, rgba(11, 17, 32, 0.5) 60%, transparent 100%);
+}
+
+.life-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 32px 24px;
+    z-index: 3;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.life-card:hover .life-content {
+    transform: translateY(0);
+}
+
+.life-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.life-card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.life-cta-container {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.btn-discover {
+    background: linear-gradient(135deg, #007bff 0%, #00aaff 100%);
+    color: #fff;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-discover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .life-at-linq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .life-at-linq-grid {
+        grid-template-columns: 1fr;
+    }
+    .life-card {
+        height: 350px;
+    }
+}
